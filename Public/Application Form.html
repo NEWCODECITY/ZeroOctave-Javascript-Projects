@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image: url('clouds.jpg');;
+                margin-left: 500px;
+                margin-right: 500px;
+            }
+            b{
+                font-size: 30px;
+            }
+            input{
+                font-size: 15px;
+            }
+            .FirstName,.LastName, .Age, .PNumber, .APNumber, .DOB, .Gender, .Upload{
+                    background-color: rgb(141, 189, 243);
+                    padding-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <head><title>Application Form</title></head>
+        <form>
+            <div class="FirstName">
+                <p><b>First Name:</b></p><br>
+                <input type="text"  name="first" ><br>
+                <br>
+            </div> 
+
+            <div class="LastName">
+                <p><b>Last Name:</b></p><br>
+                <input type="text"  name="last" ><br>
+                <br>
+            </div>         
+            
+            <div class="Age">
+                <p><b>Age:</b></p><br>
+                <input type="number"  name="age" ><br>
+                <br>
+            </div>
+
+            <div class="PNumber">
+                <p><b>Phone Number:</b></p><br>
+                <input type="number"  name="phone" ><br>
+                <br>
+            </div>
+            
+            <div class="APNumber">
+                <p><b>Alternate Phone Number:</b></p><br>
+                <input type="number"  name="phone1" ><br>
+                <br>
+            </div>
+            
+            <div class="DOB">
+                <p><b>Date Of Birth:</b></p><br>
+                <input type="date"  name="date" ><br>
+                <br>
+            </div>
+            
+            <div class="Gender">
+                <p><b>Gender:</b></p><br>
+                <input type="radio"  name="male"  >Male<br>
+                <input type="radio"  name="female" >Female<br>
+                <input type="radio"  name="other" >Other<br>
+            </div>
+            
+            <div class="Upload">
+                <p><b>Upload a file below:</b></p><br>    
+                <form action="/action_page.php">
+                    <input type="file" name="filename"><br>           
+                    <br>
+                    <input type="reset" name="reset"><br>
+                    <br>
+                    <input type="submit">
+                    <br>
+                    <br>
+            </div>
+          </form>
+    </body>
+</html>
